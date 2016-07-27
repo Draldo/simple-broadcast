@@ -5,13 +5,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.widget.Toast;
 
-public class Connectivity extends BroadcastReceiver {
-    public Connectivity() {
+public class BatteryCharging extends BroadcastReceiver {
+    public BatteryCharging() {
     }
 
     @Override
     public void onReceive(Context context, Intent intent) {
         String action = intent.getAction();
-        Toast.makeText(context,"Data connection changed " + action,Toast.LENGTH_SHORT).show();
+        Toast.makeText(context,"Power connection changed " + action,Toast.LENGTH_SHORT).show();
     }
 }
